@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #ffffff; 
+    --color-light: #e0e0e0;
+    --color-purple: #6c63ff;
+    --color-dark: #2c2c2e;
+    --color-black: #070707;
+
+    --color-primary: var(--color-purple);
+    --color-background: var(--color-light); 
+    --color-foreground: var(--color-black);
+    --color-card-background: var(--color-white); 
+}
+
+/* corpo da página */
+body {
+    background-color: var(--color-background); 
+    color: var(--color-foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/** HERO SECTION */
+/* imagem do inicio da página */
+.hero {
+    background: 
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("imagens/pexels-bertellifotografia-3321797.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--color-white);
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+/* Título do cabeçalho */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ /* parágrafo do cabeçalho */
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* botões */
+.btn {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: .5rem;
+    color: var(--color-white);
+    display: inline-block;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+}
+
+/* cor de fundo do botão ao passar o mouse */
+.btn:hover {
+    background-color: #7e18d2;
+}
+
+/** SPEAKERS SECTION */
+.speakers {
+    padding: 3rem 1.5rem;
+}
+
+/* subtítulo das speakers */
+.speakers h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* grid da seção speaker */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* cor, borda e sombra de fundo da seção speaker */
+.speaker-card {
+    background-color: var(--color-card-background);
+    border-radius: .75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.01);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.speaker-card:hover {
+    background-color: var(--color-purple);
+}
+
+/* imagem da seção sparker-card */
+.speaker-card img {
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 10rem;
+}
+
+/* título 3 */
+.speaker-card h3 {
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
+}
+
+/** SCHEDULE SECTION */
+.schedule {
+    padding: 3rem 1.5rem
+}
+
+/* Subtítulo */
+.schedule h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Barra com informações da Schedule */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem
+}
+
+/* Cor de fundo, borda, sombra e padding */
+.schedule-item {
+    background-color: var(--color-card-background);
+    border-radius: .75rem;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.schedule-item p {
+    padding: .75rem;
+}
+
+/* Margin do título 3 */
+.schedule-item h3 {
+    margin: .75rem;
+}
+
+/** NEWSLETTER SECTION */
+.newsletter {
+    padding: 3rem 1.5rem;
+}
+
+.newsletter-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* texto do newsletter centralizado */
+.newsletter-text {
+    text-align: center;
+}
+
+/* Tamanho da fonte e margin de baixo do subtítulo */
+.newsletter-text h2 {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+}
+ /* Cor e margin do parágrafo */
+.newsletter-text p {
+    color: #888888e4;
+    margin: 1.5rem;
+    margin-left: .30rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+/* Botão de input */
+.form-group input {
+    background-color: var(--color-card-background);
+    border: 1px solid #8888;
+    border: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 32rem;
+    padding: .75rem;
+    width: 100%;
+}
+
+/* centralizando a imagem */
+.newsletter-image {
+    text-align: center;
+}
+
+/* imagem da seção newsletter*/
+.newsletter-image img {
+    height: auto;
+    max-width: 75%;
+}
+
+/** FOOTER SECTION */
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* margin do parágrafo */
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+/** MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .schedule-grid {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .newsletter-grid {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .newsletter-text {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero,
+    .speakers,
+    .schedule,
+    .newsletter {
+        padding: 4rem 8rem;
+    }
+}
+
+/* Color Scheme */
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --color-background: var(--color-dark) !important; 
+        --color-foreground: var(--color-white) !important;
+        --color-card-background: var(--color-black) !important;
+    }
+}
