@@ -1,5 +1,5 @@
 ## EVENTO FUTURE TECH 2025 💻
-
+Projeto desenvolvido durante o curso full stack da instituição OneBitCode 🤘 
 ## Descrição 📝
 A página sobre o evento future tech 2025 foi desenvolvida para mostrar o poder que o CSS tem de como deixar a página bem bonita e chamativa, tem efeitos que ao passar o mouse sobre alguns lugares a cor de fundo muda, além de cards com informações 
 e nomes dos palestrantes estarem bem organizados e com os tamanhos ideais, também foi utilizado uma forma de deixar a imagem de fundo um pouco escura para que não atrapalhasse as informações, foram utilizados as imagens dos palestrantes e
